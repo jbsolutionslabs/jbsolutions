@@ -3,9 +3,28 @@ import React from 'react'
 function Visual(){
   return (
     <div className="hero-visual" aria-hidden>
-      <div className="card card-1" />
-      <div className="card card-2" />
-      <div className="card card-3" />
+      <div className="card card-1">
+        <div className="mock-window">
+          <div className="mock-top"><span className="dot"/><span className="dot"/><span className="dot"/></div>
+          <div className="mock-lines">
+            <div className="line l1" />
+            <div className="line l2" />
+            <div className="line l3" />
+          </div>
+        </div>
+      </div>
+      <div className="card card-2">
+        <div className="mock-window">
+          <div className="mock-top"><span className="dot"/><span className="dot"/></div>
+          <div className="mock-lines">
+            <div className="line l1" />
+            <div className="line l2" />
+          </div>
+        </div>
+      </div>
+      <div className="card card-3">
+        <div className="mock-cta">Start</div>
+      </div>
       <svg className="hero-ornament" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="g" x1="0" x2="1">
