@@ -18,6 +18,18 @@
   <body>
     <a class="skip-link" href="#hero">Skip to content</a>
     <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <!--
+      This repository's root index.html is used for local Vite development
+      (it loads the unbuilt src/main.jsx). When served from GitHub Pages the
+      raw .jsx file can be served with a non-JS MIME type (text/jsx) which
+      causes the browser error: "'text/jsx' is not a valid JavaScript MIME type".
+
+      The production build is output to the `docs/` folder (vite build --outDir docs).
+      To ensure visitors see the built site if Pages is configured to serve
+      the repository root, we redirect to ./docs/ which contains the compiled
+      assets with correct MIME types.
+    -->
+    <meta http-equiv="refresh" content="0;url=./docs/" />
+    <p>If you are not redirected automatically, <a href="./docs/">click here to open the site</a>.</p>
   </body>
 </html>
