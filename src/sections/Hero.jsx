@@ -23,7 +23,7 @@ function Visual(){
         </div>
       </div>
       <div className="card card-3">
-        <div className="mock-cta">Start</div>
+        <div className="mock-cta">JB Solutions</div>
       </div>
       <svg className="hero-ornament" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <defs>
